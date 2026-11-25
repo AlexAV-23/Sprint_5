@@ -12,6 +12,7 @@ wheels/
 # Other
 .vscode/
 .python-version
-pyproject.toml
+# pyproject.toml
 uv.lock
-tests/drivers/
+# drivers/
+auxiliary/
