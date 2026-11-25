@@ -1,0 +1,25 @@
+[project]
+name = "Sprint_5"
+version = "0.1.0"
+description = "Финальный проект 5 спринта QA Яндекс практикума"
+readme = "README.md"
+requires-python = ">=3.14"
+dependencies = []
+
+[dependency-groups]
+dev = [
+    "pytest>=9.1.1",
+    "pytest-cov>=7.1.0",
+    "requests>=2.34.2",
+    "selenium>=4.52.0",
+]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+pythonpath = [".", ]
+addopts = [
+  "-vv",				        # подробный вывод хода теста
+  "--color=yes",
+  "--import-mode=importlib"
+]
+disable_test_id_escaping_and_forfeit_all_rights_to_community_support = true # отключение экранирования не-ASCII символов в ID тестов (для русских букв)

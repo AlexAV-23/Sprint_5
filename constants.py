@@ -1,0 +1,10 @@
+BASE_URL = 'https://qa-desk.education-services.ru/'
+EXPECTED_RED = "rgb(255, 105, 114)"
+TIMEOUT = 3
+TEST_PASSWORD = '1234567890'
+PRODUCT_NAME = 'Штучка'
+PRODUCT_DESCRIPTION = 'Безделушка'
+PPRODUCT_PRICE = '100'
+SELECTED_CITY = 'Казань'
+SELECTED_CATEGORY = 'Хобби'
+SELECTED_CONDITION_OF_PRODUCT = 'Б/У'
