@@ -3,11 +3,7 @@ import pytest
 import requests
 from pathlib import Path
 from selenium import webdriver
-from selenium.webdriver.chrome.service import Service
 from constants import TEST_PASSWORD, BASE_URL
-
-
-DRIVER_PATH = Path(__file__).resolve().parent / 'drivers' / 'yandexdriver'
 
 
 @pytest.fixture
@@ -16,8 +12,7 @@ def driver():
     options = webdriver.ChromeOptions()
     options.add_argument("--window-size=1920,1080")
     options.add_argument("--headless=new")
-    service = Service(executable_path=str(DRIVER_PATH))
-    driver = webdriver.Chrome(service=service, options=options)
+    driver = webdriver.Chrome(options=options)
     yield driver
 
     # teardown после yield
